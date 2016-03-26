@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PlusTestView</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="submit">发布</string>
+</resources>
