@@ -137,11 +137,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onHanlderSuccess(int reqeustCode, List<PhotoInfo> resultList) {
             if (resultList != null) {
-                if(reqeustCode!=REQUEST_CODE_EDIT) {//区分是裁剪还是添加
+                if(reqeustCode==REQUEST_CODE_GALLERY) {//区分是裁剪还是添加REQUEST_CODE_CAMERA
                     mPhotoList.clear();
                     mPhotoList.addAll(resultList);
                 }
-                else
+                else if(reqeustCode==REQUEST_CODE_EDIT||reqeustCode==REQUEST_CODE_CAMERA)
                 {
                     mPhotoList.addAll(resultList);
                 }
